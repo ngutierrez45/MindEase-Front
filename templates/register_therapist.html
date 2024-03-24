@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MindEase - Home</title>
+    <title>MindEase - Register as a Therapist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
       body {
@@ -86,6 +86,7 @@
         align-items: center;
         justify-content: center;
       }
+      
       .container p {
         color: #666;
         line-height: 1.6;
@@ -110,11 +111,26 @@
     </header>
     <div class="container">
       <h1>Welcome to MindEase</h1>
-      <p>Welcome to the Home Page!</p>
       <p>Feel free to talk to us!</p>
+      <p>Register with us today!</p>
 
       <p>Your favorite destination for all things Pynecone!</p>
-      <p>This is the Home Page!</p>
+      <p>This is the Register Therapist Page!</p>
+
+      <h2>Register</h2>
+      <form action="/register" method="POST" enctype="multipart/form-data">
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" required /><br />
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" required /><br />
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" required /><br />
+        <label for="confirm_password">Confirm Password:</label><br />
+        <input type="password" id="confirm_password" name="confirm_password" required /><br />
+        <label for="resume">Upload Your Resume:</label><br />
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required /><br />
+        <input type="submit" value="Register" />
+      </form>
     </div>
   </body>
 </html>
