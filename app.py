@@ -95,7 +95,6 @@ def register_therapist():
 
         if resume:
             filename = secure_filename(resume.filename)
-            resume.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         else:
             return 'Resume file is required'
 
